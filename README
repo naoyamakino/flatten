@@ -1,0 +1,31 @@
+README
+
+cmpt-300
+Assignment 4
+November 19th, 2009
+Naoya Makino
+nmakino@sfu.ca
+301117541
+
+File descriptions:
+main.c: filecount shall recursively gather frequency statistics 
+ 	of all regular files (i.e., no directories) in
+        the directory tree rooted at startdir.
+flatten.c: for a command line utility flatten path 
+	that operates on the directory hierarchy rooted at path.
+dirwalk.h: go throw each file in a given directory and pass back a path to the called function
+	this function is used in main.c and flatten.c
+file_info.h: stores all the neccesary information needed for displaying a histogram
+filecount: executable file
+flatten: executable file
+questions.odt: answering follow-up questions
+
+How to run the program:
+1. filecount:
+run ./filecount [startdir]
+If startdir is specified, then the count shall begin in that directory, should it exist; if not specified,
+then the current working directory will be used.
+
+2. flatten:
+run ./flatten path that operates on the directory hierarchy rooted at path. 
+
